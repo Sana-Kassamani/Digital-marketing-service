@@ -1,0 +1,19 @@
+header {
+  padding: 0px 20px;
+}
+.logo {
+  width: 141px;
+  height: 65px;
+}
+
+header button {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 25px;
+  width: 100px;
+  height: 40px;
+}
+.links {
+  width: 50%;
+  text-align: center;
+}
