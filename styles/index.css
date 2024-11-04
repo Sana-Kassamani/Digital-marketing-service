@@ -5,8 +5,13 @@
 }
 @font-face {
   font-family: "OpenSans";
-  font-weight: 400;
+  font-weight: 600;
   src: url("./../assets/fonts/OpenSans_Condensed-SemiBold.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 300;
+  src: url("./../assets/fonts/OpenSans-Regular.ttf");
 }
 header {
   padding: 0px 20px;
@@ -40,7 +45,7 @@ header button {
 }
 .hero-text > p {
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--darkblue);
 }
 .hero-text > h2 {
@@ -52,8 +57,59 @@ header button {
 .logo-circle {
   width: 30vw;
 }
+.about-us {
+  font-family: "OpenSans";
+  gap: 50px;
+  padding: 20px 25px;
+  color: var(--darkblue);
+  background-image: linear-gradient(180deg, #35bbdf 9%, #ffffff 93%);
+}
+.about-us h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+}
+.about-us p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.divider {
+  background-color: var(--blue);
+  height: 200px;
+  width: 10px;
+}
 
-@media screen and (max-width: 500px) {
+.expertise-section {
+  background-image: linear-gradient(180deg, #feffff 0%, #21dadb 100%);
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0px;
+}
+.card-column {
+  gap: 20px;
+}
+.card {
+  height: 250px;
+  max-width: 300px;
+  flex-grow: 1;
+  border-radius: 10px;
+  padding: 30px 20px;
+  gap: 20px;
+  color: var(--darkblue);
+  font-family: "OpenSans";
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+}
+.card h6 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.card p {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 550px) {
   .links {
     display: none;
   }
@@ -68,6 +124,12 @@ header button {
 
     flex-direction: column;
   }
+  .about-us h2 {
+    font-size: 18px;
+  }
+  .about-us p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 600px) {
   .links {
@@ -77,10 +139,10 @@ header button {
     height: fit-content;
   }
   .hero-text > h2 {
-    font-size: 40px;
+    font-size: 22px;
   }
   .hero-text > p {
-    font-size: 18px;
+    font-size: 14px;
   }
   .hero-section {
     flex-direction: column;
@@ -88,10 +150,16 @@ header button {
 }
 @media screen and (max-width: 700px) {
   .hero-text > h2 {
-    font-size: 50px;
+    font-size: 32px;
   }
   .hero-text > p {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .about-us h2 {
+    font-size: 25px;
+  }
+  .about-us p {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -100,5 +168,11 @@ header button {
   }
   .hero-text > p {
     font-size: 24px;
+  }
+  .about-us h2 {
+    font-size: 30px;
+  }
+  .about-us p {
+    font-size: 18px;
   }
 }
