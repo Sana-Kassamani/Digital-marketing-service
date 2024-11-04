@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: bold;
+  src: url("./../assets/fonts/OpenSans_Condensed-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  src: url("./../assets/fonts/OpenSans_Condensed-SemiBold.ttf");
+}
 header {
   padding: 0px 20px;
 }
@@ -16,4 +26,79 @@ header button {
 .links {
   width: 50%;
   text-align: center;
+  color: var(--blue);
+}
+.hero-section {
+  padding: 20px 10px;
+  height: 100vh;
+  background-image: linear-gradient(180deg, #ffffff 0%, #35bbdf 100%);
+}
+.hero-text {
+  width: 50vw;
+  gap: 20px;
+  font-family: "OpenSans";
+}
+.hero-text > p {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--darkblue);
+}
+.hero-text > h2 {
+  color: var(--blue);
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+}
+.logo-circle {
+  width: 30vw;
+}
+
+@media screen and (max-width: 500px) {
+  .links {
+    display: none;
+  }
+  .hero-text > h2 {
+    font-size: 18px;
+  }
+  .hero-text > p {
+    font-size: 12px;
+  }
+  .hero-section {
+    height: fit-content;
+
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .hero-section {
+    height: fit-content;
+  }
+  .hero-text > h2 {
+    font-size: 40px;
+  }
+  .hero-text > p {
+    font-size: 18px;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero-text > h2 {
+    font-size: 50px;
+  }
+  .hero-text > p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .hero-text > h2 {
+    font-size: 65px;
+  }
+  .hero-text > p {
+    font-size: 24px;
+  }
 }
