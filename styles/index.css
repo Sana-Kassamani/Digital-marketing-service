@@ -29,6 +29,7 @@ header button {
   height: 40px;
 }
 .links {
+  font-size: 1.2em;
   width: 50%;
   text-align: center;
   color: var(--blue);
@@ -64,7 +65,8 @@ header button {
   color: var(--darkblue);
   background-image: linear-gradient(180deg, #35bbdf 9%, #ffffff 93%);
 }
-.about-us h2 {
+.about-us h2,
+h1 {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 600;
@@ -78,16 +80,22 @@ header button {
   height: 200px;
   width: 10px;
 }
-
 .expertise-section {
   background-image: linear-gradient(180deg, #feffff 0%, #21dadb 100%);
+  gap: 20px;
+  padding: 30px 0px;
+}
+.expertise-section h1 {
+  font-size: 2.5rem;
+  font-family: "OpenSans";
+  padding: 0px 20px;
+  color: var(--darkblue);
+}
+.expertise-section > div {
   flex-wrap: wrap;
   gap: 10px;
-  padding: 20px 0px;
 }
-.card-column {
-  gap: 20px;
-}
+
 .card {
   height: 250px;
   max-width: 300px;
@@ -105,10 +113,48 @@ header button {
   text-align: center;
 }
 .card p {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 0.8rem;
 }
 
+.partner-section {
+  color: var(--darkblue);
+  font-family: "OpenSans";
+  padding: 20px;
+  gap: 10px;
+  background: linear-gradient(0deg, #ffffff 0%, #21dadb 100%),
+    linear-gradient(#ffffff, #ffffff);
+}
+
+.partner-cards {
+  gap: 15px;
+  padding: 50px 10px;
+  width: 60vw;
+}
+.partner-card {
+  gap: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  max-width: 80vw;
+  background-color: var(--lightaqua);
+  border-radius: 10px;
+}
+.partner-section h1 {
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600;
+}
+.partner-section h5 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.partner-section p {
+  text-align: left;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
 @media screen and (max-width: 550px) {
   .links {
     display: none;
@@ -147,8 +193,17 @@ header button {
   .hero-section {
     flex-direction: column;
   }
+  .partner-section h1 {
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+  }
 }
 @media screen and (max-width: 700px) {
+  .links {
+    display: none;
+  }
   .hero-text > h2 {
     font-size: 32px;
   }
