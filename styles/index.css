@@ -67,9 +67,12 @@ header button:hover {
 .about-us {
   font-family: "OpenSans";
   gap: 50px;
-  padding: 20px 25px;
+  padding: 40px 25px;
   color: var(--darkblue);
   background-image: linear-gradient(180deg, #35bbdf 9%, #ffffff 93%);
+}
+.about-us > div {
+  gap: 20px;
 }
 .about-us h2,
 h1 {
@@ -166,7 +169,7 @@ h1 {
 
 .whatsapp,
 .instagram {
-  width: 30px;
+  width: 2em;
 }
 
 footer {
@@ -206,7 +209,7 @@ footer > div > p {
     font-size: 18px;
   }
   .hero-text > p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .hero-section {
     height: fit-content;
@@ -218,6 +221,12 @@ footer > div > p {
   }
   .about-us p {
     font-size: 12px;
+  }
+  .about-us {
+    flex-direction: column;
+  }
+  .divider {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
