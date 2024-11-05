@@ -31,3 +31,11 @@ gsap.from(".down", {
   duration: 2,
   ease: "power2.out",
 });
+gsap.from(".hand-shake", {
+  scrollTrigger: ".partner-section",
+  x: -10,
+  duration: 0.3,
+  yoyo: true,
+  repeat: 6,
+  ease: "power1.inOut",
+});
