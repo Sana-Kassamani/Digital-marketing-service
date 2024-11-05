@@ -131,16 +131,23 @@ h1 {
   font-family: "OpenSans";
   padding: 20px;
   gap: 10px;
-  background: linear-gradient(0deg, #ffffff 0%, #21dadb 100%),
-    linear-gradient(#ffffff, #ffffff);
+  background: linear-gradient(0deg, #ffffff 0%, #21dadb 100%);
 }
-
-.partner-cards {
+.deliver-section {
+  color: var(--darkblue);
+  font-family: "OpenSans";
+  padding: 20px;
+  gap: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #35bbdf 100%);
+}
+.partner-cards,
+.deliver-cards {
   gap: 15px;
   padding: 50px 10px;
   width: 60vw;
 }
-.partner-card {
+.partner-card,
+.deliver-card {
   gap: 10px;
   padding: 10px;
   flex-grow: 1;
@@ -148,22 +155,29 @@ h1 {
   background-color: var(--lightaqua);
   border-radius: 10px;
 }
+.deliver-card {
+  background-color: var(--lighterBlue);
+}
 
-.partner-section h1 {
+.partner-section h1,
+.deliver-section h1 {
   padding: 20px;
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 600;
 }
-.partner-section h5 {
+.partner-section h5,
+.deliver-section h5 {
   font-weight: 600;
   font-size: 1.2rem;
 }
-.partner-section p {
+.partner-section p,
+.deliver-section p {
   font-weight: 300;
   font-size: 0.8rem;
 }
-.hand-shake {
+.hand-shake,
+.deliver-box {
   width: 20vw;
 }
 
@@ -245,7 +259,8 @@ footer > div > p {
   .hero-section {
     flex-direction: column;
   }
-  .partner-section h1 {
+  .partner-section h1,
+  .deliver-section h1 {
     padding: 20px;
     text-transform: uppercase;
     font-size: 30px;
@@ -269,6 +284,9 @@ footer > div > p {
     font-size: 18px;
   }
   .partner-section {
+    flex-direction: column;
+  }
+  .deliver-section {
     flex-direction: column;
   }
 }

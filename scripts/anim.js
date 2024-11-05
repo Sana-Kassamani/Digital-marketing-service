@@ -16,6 +16,13 @@ gsap.from(".partner-card", {
   duration: 2,
   ease: "power2.out",
 });
+gsap.from(".deliver-card", {
+  scrollTrigger: ".deliver-card",
+  opacity: 0,
+  x: -500,
+  duration: 2,
+  ease: "power2.out",
+});
 
 gsap.from(".up", {
   scrollTrigger: ".up",
@@ -33,6 +40,14 @@ gsap.from(".down", {
 });
 gsap.from(".hand-shake", {
   scrollTrigger: ".partner-section",
+  x: -10,
+  duration: 0.3,
+  yoyo: true,
+  repeat: 6,
+  ease: "power1.inOut",
+});
+gsap.from(".deliver-box", {
+  scrollTrigger: ".deliver-section",
   x: -10,
   duration: 0.3,
   yoyo: true,
