@@ -153,17 +153,49 @@ h1 {
   font-weight: 600;
 }
 .partner-section h5 {
-  text-align: left;
   font-weight: 600;
   font-size: 1.2rem;
 }
 .partner-section p {
-  text-align: left;
   font-weight: 300;
   font-size: 0.8rem;
 }
 .hand-shake {
   width: 20vw;
+}
+
+.whatsapp,
+.instagram {
+  width: 30px;
+}
+
+footer {
+  color: var(--darkblue);
+  font-family: "OpenSans";
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.299);
+  /* background-image: linear-gradient(180deg, #ffffff 0%, #35bbdf 100%); */
+}
+footer > div {
+  padding: 30px;
+  width: 80vw;
+}
+footer p {
+  font-size: 1.2em;
+  padding: 10px;
+}
+footer > div > p {
+  font-size: 1.3em;
+  padding: 30px;
+  width: 80vw;
+}
+
+.contact-us {
+  gap: 20px;
+}
+
+.contact-us > div {
+  gap: 5px;
 }
 
 @media screen and (max-width: 550px) {
